@@ -1,0 +1,4 @@
+shippable/
+.coverage
+.*.swp
+*.pyc
