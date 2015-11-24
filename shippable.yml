@@ -13,6 +13,7 @@ services:
 env:
   global:
     - DISPLAY=:99.0
+    - secure: CDi+yM4i3fb4A6OXo58uQmIBRHbyXeFCKd75MJjdigLe0B0XdUN7nrg37psa8kxv50jvC0EpEvghDT92oUWeumTaJu/q6zU3Mqj0U4bdhSFLtpy4kp9pVFn6NuRQW8u3eHtCgRDcg/4ABaAPkp75OBwcDdiBy5IlSk0q80FfFwfv+t6+HNABcSPwen8wcWWCwNtqVbBF6Jgbt3qofA8xVFJGXeaS/peEGqmVsFZS/aU62H5XCdNFTBWKL80hVBbFPq0U/2DuAYoTEg54UPbjsL8unZTIN1sZSMt3D25qruYdiBVJVTT6JFt2lT3+xzwFV2puLjjbIV5M0W5je06GUA==
 
 install:
   - pip install -r requirements.txt
@@ -25,6 +26,7 @@ before_script:
 
 script:
   - python manage.py test
+  - echo $varrr
 
 after_script:
   - /etc/init.d/xvfb stop
