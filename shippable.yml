@@ -2,11 +2,13 @@ language: python
 
 python:
   - 2.7
-addons:
-  firefox: "28.0"
+#addons:
+ # firefox: "28.0"
 services:
   - selenium
-build_image: shippable/minv2
+  
+build_image: drydock/u12pytpls:tip
+
 env:
   global:
     - DISPLAY=:99.0
