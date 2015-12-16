@@ -20,10 +20,9 @@ before_script:
   - mkdir -p shippable/testresults
   - mkdir -p shippable/codecoverage
   - mysql -e 'create database test;'
-  - /etc/init.d/xvfb start 
 
 script:
-  - python manage.py test
+  - xvfb-run python manage.py test  
 
 after_script:
   - /etc/init.d/xvfb stop
