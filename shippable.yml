@@ -24,5 +24,5 @@ before_script:
 script:
   - xvfb-run python manage.py test  
 
-after_script:
-  - /etc/init.d/xvfb stop
+#after_script:
+ # - /etc/init.d/xvfb stop
