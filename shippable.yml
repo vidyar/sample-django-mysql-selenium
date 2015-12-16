@@ -2,10 +2,10 @@ language: python
 
 python:
   - 2.7
-#addons:
- # firefox: "28.0"
+
 services:
   - selenium
+  - mysql
   
 build_image: drydock/u12pytpls:tip
 
